@@ -6,6 +6,12 @@
 
   <div class="field">
     <%= f.label :password, "New password" %><br />
+<<<<<<< HEAD
+=======
+    <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em><br />
+    <% end %>
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
     <%= f.password_field :password, autofocus: true, autocomplete: "off" %>
   </div>
 

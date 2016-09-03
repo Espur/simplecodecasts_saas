@@ -5,7 +5,11 @@
 
   <div class="field">
     <%= f.label :email %><br />
+<<<<<<< HEAD
     <%= f.email_field :email, autofocus: true %>
+=======
+    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
   </div>
 
   <div class="actions">
@@ -13,4 +17,8 @@
   </div>
 <% end %>
 
+<<<<<<< HEAD
 <%= render "devise/shared/links" %>
+=======
+<%= render "devise/shared/links" %>
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9

@@ -1,9 +1,17 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :plan
+<<<<<<< HEAD
+=======
+  has_one :profile
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
   attr_accessor :stripe_card_token
   
   def save_with_payment

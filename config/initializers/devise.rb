@@ -4,7 +4,13 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
+<<<<<<< HEAD
   # config.secret_key = 'aa4eaf063eaee17987524153f38f271df4a1b33e5fa89a33970d21cab638bb67f8ae5b27cb6c17b16a234670d19da786b1b45352d58f2487065efc7cde1553d9'
+=======
+  # Devise will use the `secret_key_base` as its `secret_key`
+  # by default. You can change it below and use your own secret key.
+  # config.secret_key = '02c4cb55849f835299ff700f359d9f2aadc494abc0b6152c7defa5c7da7f471555e3bfb7d87ce7fededeeb9d76d74d26c1e1d5ed8cbb47654e01201e57c6d07d'
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -15,6 +21,12 @@ Devise.setup do |config|
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 
+<<<<<<< HEAD
+=======
+  # Configure the parent class responsible to send e-mails.
+  # config.parent_mailer = 'ActionMailer::Base'
+
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
@@ -29,7 +41,11 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
+<<<<<<< HEAD
   # config.authentication_keys = [ :email ]
+=======
+  # config.authentication_keys = [:email]
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -41,12 +57,20 @@ Devise.setup do |config|
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
+<<<<<<< HEAD
   config.case_insensitive_keys = [ :email ]
+=======
+  config.case_insensitive_keys = [:email]
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
   # modifying a user and when used to authenticate or find a user. Default is :email.
+<<<<<<< HEAD
   config.strip_whitespace_keys = [ :email ]
+=======
+  config.strip_whitespace_keys = [:email]
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # Tell if authentication through request.params is enabled. True by default.
   # It can be set to an array that will enable params authentication only for the
@@ -86,18 +110,35 @@ Devise.setup do |config|
   # config.clean_up_csrf_token_on_authentication = true
 
   # ==> Configuration for :database_authenticatable
+<<<<<<< HEAD
   # For bcrypt, this is the cost for hashing the password and defaults to 10. If
   # using other encryptors, it sets how many times you want the password re-encrypted.
+=======
+  # For bcrypt, this is the cost for hashing the password and defaults to 11. If
+  # using other algorithms, it sets how many times you want the password to be hashed.
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
   #
   # Limiting the stretches to just one in testing will increase the performance of
   # your test suite dramatically. However, it is STRONGLY RECOMMENDED to not use
   # a value less than 10 in other environments. Note that, for bcrypt (the default
+<<<<<<< HEAD
   # encryptor), the cost increases exponentially with the number of stretches (e.g.
   # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
   # config.pepper = '8e37dfc5029394e78e77ce379b2ea75cd77b24cf780342a8a1b322964947b9815a7059fc1f87974cce2bbf8d352e96285c039ee241cb6084c8585d0f13dfdf82'
+=======
+  # algorithm), the cost increases exponentially with the number of stretches (e.g.
+  # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
+  config.stretches = Rails.env.test? ? 1 : 11
+
+  # Set up a pepper to generate the hashed password.
+  # config.pepper = 'b66a7502b06b95205d802ce356917b098452237cccbdacc4a309c5143d3fa4a4703bf9d42c7c5b314f1308254f1c563c5d3ee503abdb02eced0a8f3f152e8e34'
+
+  # Send a notification email when the user's password is changed
+  # config.send_password_change_notification = false
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -122,7 +163,11 @@ Devise.setup do |config|
   config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
+<<<<<<< HEAD
   # config.confirmation_keys = [ :email ]
+=======
+  # config.confirmation_keys = [:email]
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
@@ -140,21 +185,32 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
+<<<<<<< HEAD
   config.password_length = 8..128
+=======
+  config.password_length = 6..128
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
   # to give user feedback and not to assert the e-mail validity.
+<<<<<<< HEAD
   # config.email_regexp = /\A[^@]+@[^@]+\z/
+=======
+  config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
   # time the user will be asked for credentials again. Default is 30 minutes.
   # config.timeout_in = 30.minutes
 
+<<<<<<< HEAD
   # If true, expires auth token on session timeout.
   # config.expire_auth_token_on_timeout = false
 
+=======
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.
   # :failed_attempts = Locks an account after a number of failed attempts to sign in.
@@ -162,7 +218,11 @@ Devise.setup do |config|
   # config.lock_strategy = :failed_attempts
 
   # Defines which key will be used when locking and unlocking an account
+<<<<<<< HEAD
   # config.unlock_keys = [ :email ]
+=======
+  # config.unlock_keys = [:email]
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # Defines which strategy will be used to unlock an account.
   # :email = Sends an unlock link to the user email
@@ -184,19 +244,36 @@ Devise.setup do |config|
   # ==> Configuration for :recoverable
   #
   # Defines which key will be used when recovering the password for an account
+<<<<<<< HEAD
   # config.reset_password_keys = [ :email ]
+=======
+  # config.reset_password_keys = [:email]
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
   config.reset_password_within = 6.hours
 
+<<<<<<< HEAD
   # ==> Configuration for :encryptable
   # Allow you to use another encryption algorithm besides bcrypt (default). You can use
   # :sha1, :sha512 or encryptors from others authentication tools as :clearance_sha1,
   # :authlogic_sha512 (then you should set stretches above to 20 for default behavior)
   # and :restful_authentication_sha1 (then you should set stretches to 10, and copy
   # REST_AUTH_SITE_KEY to pepper).
+=======
+  # When set to false, does not sign a user in automatically after their password is
+  # reset. Defaults to true, so a user is signed in automatically after a reset.
+  # config.sign_in_after_reset_password = true
+
+  # ==> Configuration for :encryptable
+  # Allow you to use another hashing or encryption algorithm besides bcrypt (default).
+  # You can use :sha1, :sha512 or algorithms from others authentication tools as
+  # :clearance_sha1, :authlogic_sha512 (then you should set stretches above to 20
+  # for default behavior) and :restful_authentication_sha1 (then you should set
+  # stretches to 10, and copy REST_AUTH_SITE_KEY to pepper).
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
   #
   # Require the `devise-encryptable` gem when using anything other than bcrypt
   # config.encryptor = :sha512
@@ -253,7 +330,11 @@ Devise.setup do |config|
   # The router that invoked `devise_for`, in the example above, would be:
   # config.router_name = :my_engine
   #
+<<<<<<< HEAD
   # When using omniauth, Devise cannot automatically set Omniauth path,
+=======
+  # When using OmniAuth, Devise cannot automatically set OmniAuth path,
+>>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 end
