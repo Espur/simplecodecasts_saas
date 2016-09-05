@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-  devise_for :users
-=======
   devise_for :users, controllers: { registrations: 'users/registrations' }
->>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
   resources :contacts
   get '/about' => 'pages#about'
   root 'pages#home'

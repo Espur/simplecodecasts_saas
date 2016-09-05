@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160903124217) do
+ActiveRecord::Schema.define(version: 20141224005247) do
 
   create_table "contacts", force: true do |t|
     t.string   "name"
@@ -39,8 +39,8 @@ ActiveRecord::Schema.define(version: 20160903124217) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.integer  "plan_id"
     t.string   "stripe_customer_token"
   end
