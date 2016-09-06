@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> c99dd1a35851e42dfd7d11f5fcc984fab212f5d9
 class Users::RegistrationsController < Devise::RegistrationsController
-  before_filter :select_plan, only: :new
   
   def create
     super do |resource|
@@ -17,6 +12,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
       end
     end
   end
+  
+
   
   private
     def select_plan
