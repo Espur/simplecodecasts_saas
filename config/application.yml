@@ -3,9 +3,9 @@
 # pusher_app_id: "2954"
 # pusher_key: 7381a978f7dd7f9a1117
 # pusher_secret: abdc3b896a0ffb85d373
-stripe_api_key: sk_test_B9lAG2f2KTBWIWv0UV8XaIwa
-stripe_publishable_key: pk_test_rQwhmSTUwHwQRMKrcHagtSN5
+stripe_api_key: sk_test_yB6brazBfbHUq89bd7aTv9jW
+stripe_publishable_key: pk_test_o3je0CWJRXXYaNtZO48sl4KH
 #
 production:
-   stripe_api_key: sk_test_B9lAG2f2KTBWIWv0UV8XaIwa
-   stripe_publishable_key: pk_test_rQwhmSTUwHwQRMKrcHagtSN5
+   stripe_api_key: sk_test_yB6brazBfbHUq89bd7aTv9jW
+   stripe_publishable_key: pk_test_o3je0CWJRXXYaNtZO48sl4KH
