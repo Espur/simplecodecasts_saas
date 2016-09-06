@@ -59,4 +59,5 @@ group :development do
   gem 'spring'
 end
 
+# Use devise for user authenitcation
 gem 'devise', '3.4.1'
