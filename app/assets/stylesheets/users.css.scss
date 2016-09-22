@@ -38,6 +38,8 @@ img {
     -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    width: 140px;
+    height: 140px;
 }
 
 /* User index page styles */
@@ -47,4 +49,6 @@ img {
 
 .user-index-avatar {
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
